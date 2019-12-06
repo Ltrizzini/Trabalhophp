@@ -16,8 +16,8 @@ while($row = mysqli_fetch_array($result)){
         echo "<td>" . $row['nome'] . "</td>";
         echo "<td>" . $row['descricao'] . "</td>";
         echo "<td>" . $row['preco'] . "</td>";
-        echo "<td><a href='edit_produto.php?id=" . $row['id'] . "'>Editar</a></td>";
-        echo "<td><a href='rmv_produto.php?'>Apagar</a></td>";
+        echo "<td><a href='listar_edit_produto.php?id=" . $row['id'] . "'>Editar</a></td>";
+        echo "<td><a href='rmv_produto.php?id=". $row['id'] . "'>Apagar</a></td>";
         echo "</tr>";
     }
 echo "</table>";
