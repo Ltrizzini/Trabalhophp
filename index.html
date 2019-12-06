@@ -1,7 +1,32 @@
-<form action="post_produto.php" method="POST">
-    Nome: <input type="text" name="nome"><br><br>
-    Descricao: <input type="text" name="desc"><br><br>
-    Preco: <input type="number" name="preco"><br><br>
-    <input type="submit" value="Salvar">
-</form>
-<a href="listar_produtos.php">listar produtos</a>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <form action="post_produto.php" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nome</label>
+                <input type="text" class="form-control" name="nome" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Descrição</label>
+                <input type="text" class="form-control" name="desc" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Preço</label>
+                <input type="text" class="form-control" name="preco" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+            </div>
+
+            <button type="submit" value="Salvar" class="btn btn-primary">Submit</button>
+            <br><br>
+            <a href="listar_produtos.php">Listar produtos</a>
+    </div>
+    </form>
+</body>
