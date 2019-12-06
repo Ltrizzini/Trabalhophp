@@ -21,6 +21,7 @@ while($row = mysqli_fetch_array($result)){
         echo "</tr>";
     }
 echo "</table>";
+echo "<a href='index.html'>Cadastrar produtos</a>";
 // Free result set
 mysqli_free_result($result);
 } //continua no próximo slide
